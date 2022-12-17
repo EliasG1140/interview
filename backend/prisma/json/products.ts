@@ -1,12 +1,14 @@
 export const JSON_products = [
   {
-    "name": "Memoria RAM",
+    "name": "PC",
     "price": 180000,
-    "descripcion": "Memmoria RAM Corsair de 8GB"
+    "descripcion": "PC Gamer 8GB Ram",
+    "namefile": "pc.png"
   },
   {
     "name": "Disco Duro",
     "price": 180000,
-    "descripcion": "Disco Mecanico de 500GB"
+    "descripcion": "Disco Mecanico de 500GB",
+    "namefile": "disco.jpg"
   }
 ]

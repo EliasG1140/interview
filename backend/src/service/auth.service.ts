@@ -42,6 +42,7 @@ export async function signIn(body: any, res: Response) {
   const token = jwt.sign(payload, process.env.JWT_SECRET, {expiresIn: '1d'})
   res.send({
     username,
+    rol: user.rol,
     token
   })
 }

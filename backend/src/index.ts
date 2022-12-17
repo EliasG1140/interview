@@ -15,12 +15,13 @@ const prefix = process.env.prefix || '/api';
 const port = process.env.PORT || 3000;
 
 /* ------------------------------- Middleware ------------------------------- */
-app.use(express.urlencoded({extended:true}))
+app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(morgan('dev'))
 app.use(cors())
 
 /* --------------------------------- Routes --------------------------------- */
+app.use('/uploads', express.static("uploads"))
 app.use(`${prefix}/v1/auth`, authRouter)
 app.use(`${prefix}/v1/product`, productRouter)
 
