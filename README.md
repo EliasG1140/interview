@@ -6,7 +6,7 @@ git clone https://github.com/EliasG1140/interview.git
 En el repositorio encontraemos dos carpetas, destinadas para el Backend y el Frontend.
 Para ello debemos empezar configurando el backend, **entramos a la carpeta** y colocamos los siguiente codigo.
 
-## - Configuración del Backend
+## Configuración del Backend
 ### Instalar los paquetes
 ```sh
 npm install
@@ -37,4 +37,24 @@ npm run dev
 "build": Limpia la carpeta dist y crea el build de la aplicación.
 "production": Corre el servidor en modo producción.
 "dev": Corre el servidor en modo desarrollo.
+```
+
+
+## Frontend
+
+Para ingresar los siguientes comandos, hay que estar ubicados en la carpeta de 'frontend'
+
+### Instalar los paquetes
+```sh
+npm install
+```
+
+### Ejecutar la aplicación web.
+```sh
+npm run dev
+```
+**Scripts disponibles***
+```sh
+"dev": Corre la aplicación en modo desarrollo.
+"build": Compilar y crea el archivo bundle.
 ```
